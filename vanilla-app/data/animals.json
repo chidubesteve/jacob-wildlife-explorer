@@ -1,0 +1,82 @@
+[
+  {
+    "id": "badger",
+    "name": "European Badger",
+    "sci": "Meles meles",
+    "desc": "Nocturnal diggers that live in family groups called clans. They help control pest populations.",
+    "img": "assets/badger.jpg",
+    "lat": 53.35,
+    "lng": -2.9,
+    "tips": [
+      "Leave a shallow dish of water in your garden",
+      "Don't disturb setts (their homes)",
+      "Put out unsalted peanuts"
+    ]
+  },
+  {
+    "id": "hedgehog",
+    "name": "European Hedgehog",
+    "sci": "Erinaceus europaeus",
+    "desc": "Spiky night-time insect eaters that hibernate in winter.",
+    "img": "assets/hedgehog.jpg",
+    "lat": 53.36,
+    "lng": -2.88,
+    "tips": [
+      "Make a hedgehog highway (small gaps in fences)",
+      "Leave piles of leaves for hibernation",
+      "Avoid slug pellets"
+    ]
+  },
+  {
+    "id": "otter",
+    "name": "Eurasian Otter",
+    "sci": "Lutra lutra",
+    "desc": "Playful swimmers that have made a comeback on UK rivers.",
+    "img": "assets/otter.jpg",
+    "lat": 53.34,
+    "lng": -2.92,
+    "tips": [
+      "Keep rivers clean – don't litter near water",
+      "Report oil spills if you see them"
+    ]
+  },
+  {
+    "id": "fox",
+    "name": "Red Fox",
+    "sci": "Vulpes vulpes",
+    "desc": "Clever urban adapters famous for their bushy tails.",
+    "img": "assets/fox.jpg",
+    "lat": 53.37,
+    "lng": -2.91,
+    "tips": [
+      "Secure your bins so foxes don't scatter rubbish",
+      "Enjoy watching them from a distance"
+    ]
+  },
+  {
+    "id": "deer",
+    "name": "Red Deer",
+    "sci": "Cervus elaphus",
+    "desc": "The UK's largest land mammal, often seen in woodlands.",
+    "img": "assets/deer.jpg",
+    "lat": 53.33,
+    "lng": -2.89,
+    "tips": [
+      "Drive carefully on rural roads at dawn/dusk",
+      "Plant native trees to provide food"
+    ]
+  },
+  {
+    "id": "squirrel",
+    "name": "Grey Squirrel",
+    "sci": "Sciurus carolinensis",
+    "desc": "Acrobatic tree-dwellers that bury nuts for winter.",
+    "img": "assets/squirrel.jpg",
+    "lat": 53.355,
+    "lng": -2.905,
+    "tips": [
+      "Put up bird feeders that squirrels can't reach",
+      "Plant bulb flowers they don't dig up"
+    ]
+  }
+]
