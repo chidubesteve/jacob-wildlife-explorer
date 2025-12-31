@@ -2,65 +2,107 @@
   {
     "id": "badger",
     "name": "European Badger",
-    "sci": "Meles meles",
-    "desc": "Nocturnal diggers that live in family groups called clans. They help control pest populations.",
-    "img": "assets/badger.jpg",
-    "lat": 53.35,
-    "lng": -2.9,
+    "scientificName": "Meles meles",
+    "description": "The European badger is a powerfully built black, white, and grey animal with a small head, stocky body, small black eyes, and short tail. They live in family groups (called cete/clan) in a series of underground tunnels called a sett. They help control pest populations.",
+    "img": "assets/badger.webp",
+    "habitat": "Woodlands, hedgerows, and grasslands across the UK",
+    "diet": "Omnivore - earthworms, insects, fruits, cereals, and small mammals",
+    "funFact": "Badgers are incredibly clean animals and have separate toilet areas away from their setts!",
+    "location": {
+      "zone": "Badger Setts",
+      "lat": 53.35,
+      "lng": -2.9
+    },
+    "conservation": "Least Concern - Protected under the Protection of Badgers Act 1992",
     "tips": [
       "Leave a shallow dish of water in your garden",
       "Don't disturb setts (their homes)",
       "Put out unsalted peanuts"
-    ]
+    ],
+    "source": "https://en.wikipedia.org/wiki/European_badger"
   },
   {
     "id": "hedgehog",
     "name": "European Hedgehog",
-    "sci": "Erinaceus europaeus",
-    "desc": "Spiky night-time insect eaters that hibernate in winter.",
-    "img": "assets/hedgehog.jpg",
-    "lat": 53.36,
-    "lng": -2.88,
+    "scientificName": "Erinaceus europaeus",
+    "description": "The European hedgehog is a spiny mammal native to Europe. They feed on insects.They are nocturnal animals that hibernate during winter. Their spines are actually modified hairs made of keratin.",
+    "habitat": "Gardens, hedgerows, woodlands, and grasslands",
+    "diet": "Insectivore - beetles, caterpillars, earthworms, and slugs",
+    "conservation": "Vulnerable - UK population has declined by 50% since 2000",
+    "funFact": "A hedgehog has around 5,000 to 7,000 spines on its back!",
+    "img": "assets/hedgehog.webp",
+    "location": {
+      "zone": "Squirrel Woods",
+      "lat": 53.36,
+      "lng": -2.88
+    },
     "tips": [
       "Make a hedgehog highway (small gaps in fences)",
       "Leave piles of leaves for hibernation",
       "Avoid slug pellets"
-    ]
+    ],
+    "source": "https://en.wikipedia.org/wiki/European_hedgehog"
   },
   {
     "id": "otter",
     "name": "Eurasian Otter",
-    "sci": "Lutra lutra",
-    "desc": "Playful swimmers that have made a comeback on UK rivers.",
-    "img": "assets/otter.jpg",
-    "lat": 53.34,
-    "lng": -2.92,
+    "scientificName": "Lutra lutra",
+    "description": "The Eurasian otter is a semiaquatic mammal with a sleek body, webbed feet, and a powerful tail. Once nearly extinct in Britain, their numbers have recovered significantly.",
+    "habitat": "Rivers, lakes, coastal areas, and wetlands",
+    "diet": "Carnivore - fish, crustaceans, amphibians, and water birds",
+    "conservation": "Near Threatened - Now found in every county in England",
+    "funFact": "Otters can close their ears and nostrils when swimming underwater!",
+    "img": "assets/images/otter.webp",
+    "location": {
+      "lat": 53.4044,
+      "lng": -2.9896,
+      "zone": "Otter rivers"
+    },
     "tips": [
       "Keep rivers clean – don't litter near water",
       "Report oil spills if you see them"
-    ]
+    ],
+    "source": "https://en.wikipedia.org/wiki/Eurasian_otter"
   },
   {
     "id": "fox",
     "name": "Red Fox",
-    "sci": "Vulpes vulpes",
-    "desc": "Clever urban adapters famous for their bushy tails.",
-    "img": "assets/fox.jpg",
-    "lat": 53.37,
-    "lng": -2.91,
+    "scientificName": "Vulpes vulpes",
+    "description": "The red fox is the largest of the true foxes and one of the most widely distributed members of the Carnivora, found across the entire Northern Hemisphere. They are highly adaptable and can live in a variety of habitats.",
+    "habitat": "Forests, grasslands, mountains, deserts, and urban areas",
+    "diet": "Omnivore (opportunistic) - rabbits, rodents, birds, insects, fruits, and vegetables",
+    "img": "assets/images/fox.webp",
+    "location": {
+      
+      "lat": 53.37,
+      "lng": -2.91,
+      "zone": "Fox den"
+    },
+    "funFact": "Foxes have super-hearing, they can hear a watch ticking from 40 yards away!",
     "tips": [
       "Secure your bins so foxes don't scatter rubbish",
       "Enjoy watching them from a distance"
-    ]
+    ],
+    "conservation": "Least Concern - population stable throughout the UK" ,
+    "source": "https://en.wikipedia.org/wiki/Red_fox"
   },
   {
     "id": "deer",
     "name": "Red Deer",
-    "sci": "Cervus elaphus",
-    "desc": "The UK's largest land mammal, often seen in woodlands.",
-    "img": "assets/deer.jpg",
-    "lat": 53.33,
-    "lng": -2.89,
+    "scientificName": "Cervus elaphus",
+    "description": "The red deer is one of the largest deer species and UK largest mammal. A male red deer is called a stag or hart, and a female is called a doe or hind",
+    "funFact": "Red deer are the national animal of Scotland and Wales",
+    "conservation": "Least Concern - UK population has increased by 50% since 2000",
+    "diet": "Herbivore - grass, shrubs, and trees",
+    "habitat": "Forests, grasslands, and woodlands",
+    "source": "https://en.wikipedia.org/wiki/Red_deer",
+    "img": "assets/images/deer.webp",
+    "location": {
+
+          "lat": 53.33,
+          "lng": -2.89,
+          "zone": "Deer pasture"
+    },
     "tips": [
       "Drive carefully on rural roads at dawn/dusk",
       "Plant native trees to provide food"
@@ -68,15 +110,24 @@
   },
   {
     "id": "squirrel",
-    "name": "Grey Squirrel",
-    "sci": "Sciurus carolinensis",
-    "desc": "Acrobatic tree-dwellers that bury nuts for winter.",
-    "img": "assets/squirrel.jpg",
-    "lat": 53.355,
-    "lng": -2.905,
+    "name": "Red Squirrel",
+    "scientificName": "Sciurus vulgaris",
+    "description": "small, agile woodland mammals known for their reddish-brown fur, bushy tail, and distinctive large ear tufts. Not to be confused with: the grey squirrel which is native to the United States.",
+    "Diet": "nuts, seeds, tree shoots and other plant matter",
+    "Habitat": "coniferous, mixed and broadleaved woodlands",
+    "img": "assets/images/squirrel.webp",
+    "location": {
+
+      "lat": 53.355,
+      "lng": -2.905,
+      "zone":  "Squirrel woods"
+    },
+    "funFact": "Red squirrels can jump more than 2m – not bad for an animal with a body length of less than 25cm!",
+    "conservation": "Endangered - in England and wales and near threatened in Scotland due to competition and disease from invasive grey squirrels",
     "tips": [
       "Put up bird feeders that squirrels can't reach",
       "Plant bulb flowers they don't dig up"
-    ]
+    ],
+    "source": "https://en.wikipedia.org/wiki/Red_squirrel"
   }
 ]
