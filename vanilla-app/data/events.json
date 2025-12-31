@@ -1,0 +1,68 @@
+[
+   {
+    "id": "1",
+    "title": "Night Safari Experience",
+    "description": "Join us for an exclusive after-dark tour to see our nocturnal residents in action. See badgers, foxes, and owls as they wake up and begin their nightly routines.",
+    "date": "2026-02-15",
+    "time": "20:00 - 22:30",
+    "category": "adults",
+    "location": "Main Entrance",
+    "price": "£25 per person",
+    "spots": 12
+  },
+  {
+    "id": "2",
+    "title": "Wildlife Photography Workshop",
+    "description": "Learn to capture stunning wildlife images with professional photographer Sarah Jenkins. All skill levels welcome. Bring your own camera.",
+    "date": "2026-02-20",
+    "time": "10:00 - 15:00",
+    "category": "adults",
+    "location": "Education Centre",
+    "price": "£45 per person",
+    "spots": 8
+  },
+  {
+    "id": "3",
+    "title": "Family Fun Day",
+    "description": "A day packed with activities for the whole family! Animal encounters, craft activities, nature trails, and a special meet-the-keeper session.",
+    "date": "2026-02-24",
+    "time": "10:00 - 16:00",
+    "category": "families",
+    "location": "Across the Centre",
+    "price": "Free with admission",
+    "spots": 50
+  },
+  {
+    "id": "4",
+    "title": "Junior Rangers Club",
+    "description": "Weekly sessions for children aged 7-12 to learn about wildlife conservation. This week: Building hedgehog houses!",
+    "date": "2026-02-17",
+    "time": "14:00 - 16:00",
+    "category": "children",
+    "location": "Activity Barn",
+    "price": "£8 per child",
+    "spots": 15
+  },
+  {
+    "id": "5",
+    "title": "Owl Prowl for Kids",
+    "description": "A magical evening adventure for young explorers (ages 5-10). Listen for owl calls, learn about nocturnal animals, and enjoy hot chocolate!",
+    "date": "2026-02-22",
+    "time": "17:30 - 19:30",
+    "category": "children",
+    "location": "Owl Sanctuary",
+    "price": "£12 per child (1 adult free)",
+    "spots": 20
+  },
+  {
+    "id": "6",
+    "title": "Conservation Talk: Red Squirrels",
+    "description": "Expert conservationist Dr. James Murray discusses the plight of Britain's native red squirrel and what we can do to help.",
+    "date": "2026-02-28",
+    "time": "19:00 - 20:30",
+    "category": "adults",
+    "location": "Education Centre",
+    "price": "£10 per person",
+    "spots": 30
+  }
+] 
