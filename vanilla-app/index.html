@@ -15,13 +15,13 @@
   <title>Jacob Wildlife Explorer | British Wildlife Rescue</title>
   <meta name="description"
     content="Jacob Wildlife Centre rescues, rehabilitates, and rehomes British wildlife near Liverpool.">
-  <meta name="keywords"
-    content="wildlife centre, British animals, wildlife rescue, Liverpool, badgers, hedgehogs, foxes, barn owls, conservation">
-  <meta name="author" content="Jacob Wildlife Centre">
+    <meta name="color-scheme" content="light dark">
+  <meta name="author" content="Chidube Anike">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet">
 </head>
 
@@ -38,16 +38,16 @@
 
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li>
+          <li class="nav__item">
             <a href="index.html" class="nav__link nav__link--active" aria-current="page">Home</a>
           </li>
-          <li><a href="animals.html" class="nav__link">Animals</a></li>
-          <li><a href="map.html" class="nav__link">Map</a></li>
-          <li><a href="events.html" class="nav__link">Events</a></li>
-          <li>
+          <li class="nav__item"><a href="animals.html" class="nav__link">Animals</a></li>
+          <li class="nav__item"><a href="map.html" class="nav__link">Map</a></li>
+          <li class="nav__item"><a href="events.html" class="nav__link">Events</a></li>
+          <li class="nav__item">
             <a href="favorites.html" class="nav__link nav__link--accent">Favorites</a>
           </li>
-          <li>
+          <li class="nav__item nav__kids-zone">
             <a href="kids.html" class="nav__link nav__link--kids"><svg fill="none" width="24px" height="24px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"
               class="kids__zone-icon">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -63,90 +63,96 @@
         </ul>
       </nav>
 
-      <!-- <button class="header__menu_btn" id="menuBtn" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button> -->
     </div>
   </header>
 
   <!-- Mobile Navigation -->
   <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html" class="mobile-nav__link mobile-nav__link--active">
-      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-        class="nav__icon">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <g id="Navigation / House_01">
-            <path id="Vector"
-              d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z"
+    <li>
+      <a href="index.html" class="mobile-nav__link" aria-current="page">
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="nav__icon">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <g id="Navigation / House_01">
+              <path id="Vector"
+                d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </g>
+        </svg>
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="animals.html" class="mobile-nav__link">
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="nav__icon">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path opacity="0.1"
+              d="M4.44905 17.0091C-0.246262 7.83768 7.34063 0.686186 19.5547 3.61251C20.4161 3.81888 21.0082 4.6099 20.9652 5.49458C20.5863 13.288 17.0342 17.7048 6.13264 17.9858C5.43034 18.0039 4.7692 17.6344 4.44905 17.0091Z"
+              fill="#323232"></path>
+            <path
+              d="M4.44905 17.0091C-0.246262 7.83768 7.34063 0.686186 19.5547 3.61251C20.4161 3.81888 21.0082 4.6099 20.9652 5.49458C20.5863 13.288 17.0342 17.7048 6.13264 17.9858C5.43034 18.0039 4.7692 17.6344 4.44905 17.0091Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M3.99987 21C5.49993 15.5 5.99988 12.5 11.9998 9.99997" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </svg>
+        <span>Animals</span>
+      </a>
+    </li>
+    <li>
+      <a href="map.html" class="mobile-nav__link">
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="nav__icon">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+              d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </g>
-        </g>
-      </svg>
-      <span>Home</span>
-    </a>
-    <a href="animals.html" class="mobile-nav__link">
-      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-        class="nav__icon">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path opacity="0.1"
-            d="M4.44905 17.0091C-0.246262 7.83768 7.34063 0.686186 19.5547 3.61251C20.4161 3.81888 21.0082 4.6099 20.9652 5.49458C20.5863 13.288 17.0342 17.7048 6.13264 17.9858C5.43034 18.0039 4.7692 17.6344 4.44905 17.0091Z"
-            fill="#323232"></path>
-          <path
-            d="M4.44905 17.0091C-0.246262 7.83768 7.34063 0.686186 19.5547 3.61251C20.4161 3.81888 21.0082 4.6099 20.9652 5.49458C20.5863 13.288 17.0342 17.7048 6.13264 17.9858C5.43034 18.0039 4.7692 17.6344 4.44905 17.0091Z"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M3.99987 21C5.49993 15.5 5.99988 12.5 11.9998 9.99997" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round"></path>
-        </g>
-      </svg>
-      <span>Animals</span>
-    </a>
-    <a href="map.html" class="mobile-nav__link">
-      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-        class="nav__icon">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path
-            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path
-            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </g>
-      </svg>
-
-      <span>Map</span>
-    </a>
-    <a href="events.html" class="mobile-nav__link">
-      <svg fill="currentColor" viewBox="0 0 24 24" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
-        stroke="currentColor" stroke-width="0.00024000000000000003" class="nav__icon">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path
-            d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z">
-          </path>
-        </g>
-      </svg>
-      <span>Events</span>
-    </a>
-    <a href="favorites.html" class="mobile-nav__link">
-      <svg width="20px" height="20px" class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-        xmlns="http://www.w3.org/2000/svg">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </g>
-      </svg>
-      <span>Favorites</span>
-    </a>
+        </svg>
+        <span>Map</span>
+      </a>
+    </li>
+    <li>
+      <a href="events.html" class="mobile-nav__link">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
+          stroke="currentColor" stroke-width="0.00024000000000000003" class="nav__icon">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z">
+            </path>
+          </g>
+        </svg>
+        <span>Events</span>
+      </a>
+    </li>
+    <li>
+      <a href="favorites.html" class="mobile-nav__link">
+        <svg width="20px" height="20px" class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </svg>
+        <span>Favorites</span>
+      </a>
+    </li>
   </nav>
 
   <!-- Main Content -->
@@ -157,13 +163,13 @@
         <div class="hero__text">
           <span class="hero__badge">
             <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-              stroke="#276842">
+              stroke="#358d5a">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
                 <path
                   d="M20 6C20 6 19.1843 6 19.0001 6C16.2681 6 13.8871 4.93485 11.9999 3C10.1128 4.93478 7.73199 6 5.00009 6C4.81589 6 4.00009 6 4.00009 6C4.00009 6 4 8 4 9.16611C4 14.8596 7.3994 19.6436 12 21C16.6006 19.6436 20 14.8596 20 9.16611C20 8 20 6 20 6Z"
-                  stroke="#276842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  stroke="#358d5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </g>
             </svg>
             Protecting British Wildlife Since 2010
@@ -195,10 +201,10 @@
             </a>
           </div>
         </div>
-        <div class="hero__image">
+        <!-- <div class="hero__image">
           <div class="hero__image-glow"></div>
           <img src="assets/images/Squirrel-red.webp" alt="Red squirrel on a tree" class="hero__mascot">
-        </div>
+        </div> -->
       </div>
     </section>
 
