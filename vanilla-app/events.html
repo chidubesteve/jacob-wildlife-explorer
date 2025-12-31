@@ -1,15 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Jacob Wildlife Explorer" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+  <title>Document</title>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Jacob Wildlife Explorer">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2d5a3d">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/events.css">
+  <meta name="author" content="Chidube Anike">
+  <meta name="description"
+    content="Find out what exciting wildlife events and activities we have for adults, families, and children at Jacob Wildlife Centre. Learn how to help British wildlife!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container header__content">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/logo.png" alt="Jacob Wildlife Explorer" class="header__logo_img">
+        <div class="header__logo_text">
+          <span class="header__logo_title">Jacob Wildlife Centre</span><span class="header__logo_subtitle">Rescuing
+            British Wildlife</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item"><a href="animals.html" class="nav__link">Animals</a></li>
+          <li class="nav__item"><a href="map.html" class="nav__link">Map</a></li>
+          <li class="nav__item"><a href="events.html" class="nav__link" aria-current="page">Events</a></li>
+          <li class="nav__item">
+            <a href="favorites.html" class="nav__link nav__link--accent">Favorites</a>
+          </li>
+          <li class="nav__item nav__kids-zone">
+            <a href="kids.html" class="nav__link nav__link--kids"><svg fill="none" width="20px" height="20px"
+                viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" class="kids__zone-icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M 26.6875 12.6602 C 26.9687 12.6602 27.1094 12.4961 27.1797 12.2383 C 27.9062 8.3242 27.8594 8.2305 31.9375 7.4570 C 32.2187 7.4102 32.3828 7.2461 32.3828 6.9648 C 32.3828 6.6836 32.2187 6.5195 31.9375 6.4726 C 27.8828 5.6524 28.0000 5.5586 27.1797 1.6914 C 27.1094 1.4336 26.9687 1.2695 26.6875 1.2695 C 26.4062 1.2695 26.2656 1.4336 26.1953 1.6914 C 25.3750 5.5586 25.5156 5.6524 21.4375 6.4726 C 21.1797 6.5195 20.9922 6.6836 20.9922 6.9648 C 20.9922 7.2461 21.1797 7.4102 21.4375 7.4570 C 25.5156 8.2774 25.4687 8.3242 26.1953 12.2383 C 26.2656 12.4961 26.4062 12.6602 26.6875 12.6602 Z M 15.3438 28.7852 C 15.7891 28.7852 16.0938 28.5039 16.1406 28.0821 C 16.9844 21.8242 17.1953 21.8242 23.6641 20.5821 C 24.0860 20.5117 24.3906 20.2305 24.3906 19.7852 C 24.3906 19.3633 24.0860 19.0586 23.6641 18.9883 C 17.1953 18.0977 16.9609 17.8867 16.1406 11.5117 C 16.0938 11.0899 15.7891 10.7852 15.3438 10.7852 C 14.9219 10.7852 14.6172 11.0899 14.5703 11.5352 C 13.7969 17.8164 13.4687 17.7930 7.0469 18.9883 C 6.6250 19.0821 6.3203 19.3633 6.3203 19.7852 C 6.3203 20.2539 6.6250 20.5117 7.1406 20.5821 C 13.5156 21.6133 13.7969 21.7774 14.5703 28.0352 C 14.6172 28.5039 14.9219 28.7852 15.3438 28.7852 Z M 31.2344 54.7305 C 31.8438 54.7305 32.2891 54.2852 32.4062 53.6524 C 34.0703 40.8086 35.8750 38.8633 48.5781 37.4570 C 49.2344 37.3867 49.6797 36.8945 49.6797 36.2852 C 49.6797 35.6758 49.2344 35.2070 48.5781 35.1133 C 35.8750 33.7070 34.0703 31.7617 32.4062 18.9180 C 32.2891 18.2852 31.8438 17.8633 31.2344 17.8633 C 30.6250 17.8633 30.1797 18.2852 30.0860 18.9180 C 28.4219 31.7617 26.5938 33.7070 13.9140 35.1133 C 13.2344 35.2070 12.7891 35.6758 12.7891 36.2852 C 12.7891 36.8945 13.2344 37.3867 13.9140 37.4570 C 26.5703 39.1211 28.3281 40.8321 30.0860 53.6524 C 30.1797 54.2852 30.6250 54.7305 31.2344 54.7305 Z">
+                  </path>
+                </g>
+              </svg>
+              Kids Zone</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li>
+        <a href="index.html" class="mobile-nav__link">
+          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Navigation / House_01">
+                <path id="Vector"
+                  d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </g>
+          </svg>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="animals.html" class="mobile-nav__link">
+          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path opacity="0.1"
+                d="M4.44905 17.0091C-0.246262 7.83768 7.34063 0.686186 19.5547 3.61251C20.4161 3.81888 21.0082 4.6099 20.9652 5.49458C20.5863 13.288 17.0342 17.7048 6.13264 17.9858C5.43034 18.0039 4.7692 17.6344 4.44905 17.0091Z"
+                fill="#323232"></path>
+              <path
+                d="M4.44905 17.0091C-0.246262 7.83768 7.34063 0.686186 19.5547 3.61251C20.4161 3.81888 21.0082 4.6099 20.9652 5.49458C20.5863 13.288 17.0342 17.7048 6.13264 17.9858C5.43034 18.0039 4.7692 17.6344 4.44905 17.0091Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3.99987 21C5.49993 15.5 5.99988 12.5 11.9998 9.99997" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+          <span>Animals</span>
+        </a>
+      </li>
+      <li>
+        <a href="map.html" class="mobile-nav__link">
+          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+          <span>Map</span>
+        </a>
+      </li>
+      <li>
+        <a href="events.html" class="mobile-nav__link" aria-current="page">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor" stroke-width="0.00024000000000000003" class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z">
+              </path>
+            </g>
+          </svg>
+          <span>Events</span>
+        </a>
+      </li>
+      <li>
+        <a href="favorites.html" class="mobile-nav__link">
+          <svg width="20px" height="20px" class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+          <span>Favorites</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-header__title">Events & Activities</h1>
+        <p class="page-header__subtitle">Join us for exciting wildlife experiences throughout the year</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="category-filter" role="tablist" aria-label="Event categories">
+        <button class="btn btn--outline-2 " data-category="all" role="tab" aria-selected="true">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor" stroke-width="0.00024000000000000003" class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z">
+              </path>
+            </g>
+          </svg> All Events</button>
+        <button class="btn btn--outline-2 " data-category="adults" role="tab" aria-selected="false">
+          <svg version="1.1" id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="adult.svg"
+            inkscape:version="0.48.4 r9939" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 1200 1200"
+            enable-background="new 0 0 1200 1200" xml:space="preserve" fill="currentColor">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <sodipodi:namedview inkscape:cy="316.22451" inkscape:cx="-132.2058" inkscape:zoom="0.37249375"
+                showgrid="false" id="namedview3040" guidetolerance="10" gridtolerance="10" objecttolerance="10"
+                borderopacity="1" bordercolor="#666666" pagecolor="#ffffff" inkscape:current-layer="svg2"
+                inkscape:window-maximized="1" inkscape:window-y="24" inkscape:window-height="876"
+                inkscape:window-width="1535" inkscape:pageshadow="2" inkscape:pageopacity="0" inkscape:window-x="65">
+              </sodipodi:namedview>
+              <path id="path3296" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccsccccscccccc"
+                d="M605.096,480 c-135.542-2.098-239.082-111.058-239.999-240C367.336,105.667,477.133,0.942,605.096,0c135.662,5.13,239.036,108.97,240.001,240 C842.429,374.439,733.19,479.09,605.096,480z M799.139,529.788c170.592,1.991,257.094,151.63,257.881,301.269V1200H889.784 l0.001-324.254c-4.072-22.416-19.255-30.018-33.164-27.82c-13.022,2.059-24.929,12.701-25.56,27.82V1200h-464.67V875.746 c-3.557-21.334-17.128-29.537-30.331-28.709c-14.138,0.889-27.853,12.135-28.393,28.709V1200h-164.68V831.057 c-0.98-159.475,99.901-300.087,259.137-301.269H799.139L799.139,529.788z">
+              </path>
+            </g>
+          </svg> Adults Only</button>
+        <button class="btn btn--outline-2 " data-category="families" role="tab" aria-selected="false">
+          <svg height="20px" width="20px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="none">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <style type="text/css">
+                .st0 {
+                  fill: currentColor;
+                }
+              </style>
+              <g>
+                <path class="st0"
+                  d="M78.642,118.933c22.879,0,41.415-18.551,41.415-41.414c0-22.888-18.536-41.423-41.415-41.423 c-22.887,0-41.422,18.535-41.422,41.423C37.219,100.383,55.755,118.933,78.642,118.933z">
+                </path>
+                <path class="st0"
+                  d="M255.706,228.731v0.062c0.101,0,0.193-0.031,0.294-0.031c0.101,0,0.194,0.031,0.294,0.031v-0.062 c15.563-0.317,28.082-12.976,28.082-28.601c0-15.648-12.52-28.299-28.082-28.617v-0.062c-0.1,0-0.193,0.031-0.294,0.031 c-0.101,0-0.193-0.031-0.294-0.031v0.062c-15.563,0.318-28.082,12.969-28.082,28.617 C227.624,215.754,240.143,228.413,255.706,228.731z">
+                </path>
+                <path class="st0"
+                  d="M433.358,118.933c22.887,0,41.423-18.551,41.423-41.414c0-22.888-18.536-41.423-41.423-41.423 c-22.879,0-41.414,18.535-41.414,41.423C391.944,100.383,410.48,118.933,433.358,118.933z">
+                </path>
+                <path class="st0"
+                  d="M512,319.675V180.463c0-20.076-21.834-41.91-41.903-41.91h-5.799l-28.818,28.818l-28.214-28.214 c-17.839,2.609-33.564,13.665-41.918,30.018l-33.494,97.967c-1.154,2.245-3.298,3.84-5.792,4.281 c-2.493,0.442-5.048-0.31-6.914-2.036l-20.835-18.04c-6.232-5.769-14.409-8.974-22.902-8.974H256h-19.41 c-8.494,0-16.67,3.206-22.903,8.974l-20.835,18.04c-1.866,1.726-4.422,2.478-6.914,2.036c-2.494-0.442-4.638-2.036-5.792-4.281 l-33.494-97.967c-9.6-18.791-28.926-30.622-50.032-30.622H78.216H41.903C21.834,138.553,0,160.387,0,180.463v139.211 c0,10.035,8.13,18.172,18.165,18.172c4.939,0,0,0,12.682,0l6.906,118.724c0,10.677,8.664,19.333,19.341,19.333 c4.506,0,12.814,0,21.122,0c8.307,0,16.615,0,21.121,0c10.677,0,19.341-8.656,19.341-19.333l6.906-118.724l-0.086-84.765 c0-1.339,0.914-2.493,2.222-2.818c1.309-0.31,2.648,0.309,3.26,1.502l26.573,65.401c3.205,6.256,9.152,10.654,16.074,11.886 c6.921,1.23,14.021-0.844,19.186-5.614l25.426-18.729c0.852-0.782,2.083-0.983,3.136-0.542c1.061,0.472,1.742,1.518,1.742,2.663 l0.094,73.508l4.777,82.187c0,7.387,6,13.379,13.395,13.379c3.112,0,8.865,0,14.618,0c5.753,0,11.506,0,14.618,0 c7.394,0,13.394-5.992,13.394-13.379l4.777-82.187l0.093-73.508c0-1.146,0.681-2.192,1.742-2.663 c1.053-0.442,2.284-0.24,3.136,0.542l25.426,18.729c5.164,4.77,12.264,6.844,19.187,5.614c6.921-1.231,12.868-5.629,16.073-11.886 l26.572-65.401c0.612-1.192,1.951-1.812,3.26-1.502c1.308,0.325,2.222,1.479,2.222,2.818l-0.031,32.332l-27.881,86.648 c-0.659,2.051-0.302,4.296,0.967,6.039c1.27,1.742,3.298,2.772,5.451,2.772h23.91l4.405,75.699 c0,10.677,8.664,19.333,19.341,19.333c4.506,0,12.814,0,21.121,0c8.308,0,16.615,0,21.122,0c10.677,0,19.34-8.656,19.34-19.333 l4.406-75.699h26.418c2.152,0,4.181-1.03,5.451-2.772c1.27-1.743,1.626-3.988,0.968-6.039L500.1,336.67 C507.037,334.107,512,327.495,512,319.675z M85.424,159.087v74.592H63.389v-74.592H85.424z">
+                </path>
+              </g>
+            </g>
+          </svg> Families</button>
+        <button class="btn btn--outline-2 " data-category="children" role="tab" aria-selected="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 500 500" class="children-icon">
+            <path
+              d="m259.25 92.625 3.39-.148c4.314.672 6.706 2.162 9.36 5.523 2.016 3.628 3.564 7.408 5.125 11.25q1.437 3.386 2.883 6.77l1.49 3.502c17.87 41.355 43.092 80.8 86.502 98.478 22.78 8.205 45.811 8.51 67.938-1.75 6.915-3.366 13.06-7.43 19.062-12.25q2.53-1.97 5.063-3.937l2.16-1.715c3.114-2.362 5.68-2.802 9.609-2.766 3.963.764 6.615 3.41 9.168 6.418 1.852 3 2.32 5.364 2.375 8.875l.086 2.492c-2.071 11.83-18.019 22.262-27.262 28.83-12.94 8.916-26.19 16.105-41.281 20.584-6.785 1.87-6.785 1.87-12.406 5.805-8.793 19.086-3.743 43.524 3 62.598 5.154 13.51 12.246 25.994 19.437 38.503l1.549 2.7q1.496 2.602 3.008 5.195l1.389 2.418 1.233 2.125C433 384 433 384 433 387c-7.978 2.22-15.757 3.383-23.988 4.102l-2.929.266q-3.54.322-7.083.632l.027 1.92c.089 6.62.149 13.238.193 19.857q.03 3.702.082 7.403c.048 3.554.071 7.109.089 10.664l.062 3.321c.002 7.158-.798 13.095-5.971 18.389-5.013 4.317-8.27 4.795-14.72 4.727-5.068-.516-7.681-3.11-11.012-6.719-3.002-4.396-4.001-7.962-3.977-13.27v-3.397l.032-3.633.008-3.745q.015-4.91.05-9.82c.02-3.345.03-6.69.04-10.035A6406 6406 0 0 1 364 388l-3.678-.398c-3.327-.418-6.314-1.086-9.478-2.23l-2.656-.948-2.688-.986-2.781-.999Q339.356 381.23 336 380c-2.185 8.353-3.994 16.728-5.594 25.21l-1.433 7.458q-1.113 5.804-2.212 11.613c-.714 3.77-1.44 7.537-2.167 11.305l-.654 3.504c-2.622 13.489-2.622 13.489-8.44 18.223l-1.781 1.488c-4.155 2.899-8.866 2.656-13.719 2.199-4.715-1.69-7.273-3.812-10-8-4.221-10.857-1.733-22.153.623-33.185a811 811 0 0 0 1.423-6.838c.992-4.829 2.004-9.653 3.017-14.477a4163 4163 0 0 0 3.501-16.88c.464-2.24.939-4.477 1.415-6.714l.85-4.119.76-3.616c.405-3.126.387-5.188-.589-8.171-2.426-2.289-2.426-2.289-5.5-4.312a646 646 0 0 1-3.266-2.329l-1.646-1.177c-3.754-2.794-7.145-6.02-10.588-9.182a777 777 0 0 1 8.25-31.09q1.026-3.572 2.045-7.145 2.895-10.14 5.802-20.273 1.791-6.252 3.573-12.505.674-2.358 1.352-4.714c6.381-20.643 6.381-20.643 2.587-41.406-2.501-4.456-5.637-8.386-8.762-12.42C280.95 194.37 271.577 173.987 263 153c-1.71 2.565-3.07 5.028-4.441 7.777-5.886 11.645-12.044 22.984-18.872 34.098l-1.074 1.75q-2.166 3.525-4.337 7.045a1359 1359 0 0 0-10.876 17.985q-1.475 2.473-2.96 4.938c-32.435 54.536-12.68 116.089-2.01 174.864l.57 3.155c.875 4.838 1.76 9.674 2.663 14.506 4.37 23.693 4.37 23.693-.663 31.882-3.473 3.77-6.812 6.69-12.086 7.203-4.847.1-8.054.031-11.914-3.203-6.15-6.006-8.227-12.325-10.75-20.437q-.637-1.973-1.276-3.942a974 974 0 0 1-5.97-19.23c-.868-2.892-1.747-5.78-2.625-8.67-.615-2.05-1.21-4.104-1.804-6.16-3.346-11.471-3.346-11.471-11.525-19.738-4.06-1.63-8.052-1.404-12.171-.206-5.676 2.425-8.233 5.932-10.879 11.383-1.436 3.998-2.617 8.048-3.74 12.145-.557 2.03-1.13 4.056-1.706 6.08a2624 2624 0 0 0-3.617 12.9 3089 3089 0 0 1-4.213 14.982 895 895 0 0 0-1.655 5.966l-1.042 3.681-.896 3.225c-1.714 4.578-4.326 8.878-8.131 12.021-5.019 1.673-10.28 2.033-15.293.129-4.783-2.737-7.531-6.02-9.707-11.129-.518-2.799-.503-5.484-.41-8.322l.042-2.374c.246-8.498 1.521-16.783 2.93-25.152q.408-2.52.81-5.044.856-5.332 1.729-10.662c1.532-9.358 3.003-18.726 4.47-28.094l.447-2.854a1678 1678 0 0 0 7.599-54.594q.386-3.12.78-6.24c.485-3.838.948-7.678 1.408-11.52l.42-3.36c1.497-11.506 1.497-11.506-2.65-21.901-3.878-4.662-8.7-7.757-13.763-11.008q-2.955-1.959-5.906-3.926l-2.992-1.987C73.23 243.094 62.222 234.692 52 225a567 567 0 0 0-3.937-3.312c-3.683-3.209-7.037-6.692-10.376-10.25l-1.564-1.644c-4.912-5.321-7.756-10.175-7.47-17.552.786-5.073 3.287-8.256 7.035-11.742 3.683-1.668 5.765-2.205 9.726-1.547 4.038 1.635 6.969 4.464 10.168 7.336 22.524 20.118 51.868 33.24 82.333 31.863 25.311-1.849 47.374-18.527 63.589-37.058C210.6 169.819 218.272 157.813 225 145l.95-1.786c3.71-7.026 7.062-14.19 10.265-21.46l.863-1.952q2.156-4.879 4.267-9.775c7.494-17.093 7.494-17.093 17.905-17.402"
+              fill="currentColor" />
+            <path
+              d="M339 51h3l.48 2.344.707 3.156.668 3.094c3.164 9.416 9.87 15.362 16.995 21.963 5.92 5.68 9.48 11.356 11.15 19.443.044 2.717.049 5.41 0 8.125-.312 5.087-.312 5.087 1 9.875l3.367-.105C392.93 118.527 403.972 122.67 417 133c3.23-2.153 3.482-2.691 4.75-6.125 3.303-7.722 8.236-13.2 15.906-16.727 5.445-1.87 11.047-3.104 16.68-4.274 7.936-1.7 14.469-3.985 20.039-10.124A86 86 0 0 1 478 92h2c.586 16.917-1.397 31.743-13 45-9.847 8.152-21.72 10.276-33.969 12.563-2.478.533-4.736 1.366-7.031 2.437l1 3c.964 15.411-.68 27.816-11 40-7.56 8.214-17.81 13.702-29.004 14.238-14.726.362-25.66-2.192-36.996-12.238-8.66-8.79-13.046-20.268-13.312-32.5.142-15.147 6.538-25.562 16.312-36.5-2.425-4.504-5.26-7.115-9.312-10.25-9.443-7.5-15.046-16.428-16.563-28.375C326.352 75.67 331.641 64.691 338 53zm-174 76 2.688 1.75c8.778 8.54 14.327 19.578 14.604 31.8.103 12.835-2.262 22.173-10.292 32.45l-1.45 1.867c-8.083 9.163-19.862 13.209-31.73 14.043-13.476.317-25.055-4.407-34.851-13.707-9.483-10.612-12.816-23.286-12.144-37.224 1.137-12.874 8.116-23.097 17.788-31.225 16.95-12.456 38.372-11.507 55.387.246"
+              fill="currentColor" />
+          </svg>
+          Children</button>
+      </div>
+
+      <!-- Events List -->
+      <div class="events-list" id="eventsList">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__info">
+        <span>
+
+          <img src="assets/images/logo.png" alt="Jacob Wildlife Centre" class="footer__logo">
+          <h3 class="footer__title">Jacob Wildlife Centre</h3>
+        </span>
+        <p class="footer__text">
+          Rescuing and caring for British wildlife in Liverpool and beyond since 2010.
+        </p>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul>
+          <li><a href="animals.html">Our Animals</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Visit Us</a></li>
+          <li><a href="kids.html">Kids Zone</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__heading">Contact</h4>
+        <p>Near Liverpool, UK</p>
+        <a href="tel:+44142345678">+44 (0)14 234 5678</a>
+        <a href="mailto:info@jacobwildlife.co.uk">info@jacobwildlife.co.uk</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Jacob Wildlife Centre. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
