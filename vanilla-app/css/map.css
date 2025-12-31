@@ -1,0 +1,153 @@
+/* Map Page Specific Styles */
+
+.location-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.location-card__content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.location-card__icon {
+  font-size: 2rem;
+  background: hsla(145, 45%, 28%, 0.1);
+  padding: var(--space-md);
+  border-radius: var(--radius-full);
+}
+
+.location-card__info p {
+  margin: 0;
+}
+
+.location-card__info p:first-child {
+  font-weight: 600;
+  color: var(--color-foreground);
+}
+
+.text-error {
+  color: var(--color-destructive);
+}
+
+.text-muted {
+  color: var(--color-muted-foreground);
+  font-size: 0.875rem;
+}
+
+/* Zone Filter */
+.zone-filter {
+  margin-bottom: var(--space-xl);
+}
+
+.zone-filter__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-md);
+}
+
+.zone-filter__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  background: var(--color-muted);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.map-placeholder__icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--space-md);
+  opacity: 0.4;
+}
+
+.map-placeholder__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-sm);
+}
+
+.map-placeholder__text {
+  color: var(--color-muted-foreground);
+  font-size: 0.875rem;
+}
+
+/* Zone Animals */
+.zone-animals {
+  margin-bottom: var(--space-xl);
+}
+
+.zone-animals__title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-lg);
+}
+
+.zone-animals__grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .zone-animals__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .zone-animals__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Map Animal Card */
+.map-animal-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-card);
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.map-animal-card__icon {
+  font-size: 2rem;
+  background: hsla(145, 45%, 28%, 0.1);
+  padding: var(--space-md);
+  border-radius: var(--radius-full);
+}
+
+.map-animal-card__name {
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-xs);
+}
+
+.map-animal-card__zone {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  margin: 0;
+}
