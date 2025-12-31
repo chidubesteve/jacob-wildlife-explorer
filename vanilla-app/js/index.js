@@ -3,6 +3,7 @@ console.log("Hello, World!");
 
 // Set CSS variable for header height
 const header = document.getElementById("header");
+console.log(document.documentElement.style.getPropertyValue("--header-height"))
 document.documentElement.style.setProperty(
   "--header-height",
   `${header.offsetHeight}px`
