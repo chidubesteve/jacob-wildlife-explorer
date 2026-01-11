@@ -9,7 +9,7 @@ export async function getAnimalData() {
 }
 
 export async function getKidsTipsData() {
-  const response = await fetch("./data/kidsTips.json");
+  const response = await fetch("./data/KidsTips.json");
   if (!response.ok) {
     throw new Error("Failed to load kids tips data");
   }
