@@ -603,6 +603,18 @@ button {
   max-width: 23rem;
    text-shadow: 0 1px 4px hsla(145, 45%, 8%, 0.5);
 }
+@media (prefers-color-scheme: light) {
+  .hero__title {
+    color: var(--color-primary-foreground);
+  }
+  .hero__description {
+    color: var(--color-primary-foreground);
+  }
+  .hero__badge {
+    color: var(--color-nature-leaf);
+    border-color: hsla(145, 45%, 28%, 0.5);
+  }
+}
 
 .hero__actions {
   display: flex;
@@ -623,17 +635,6 @@ button {
   box-shadow: var(--shadow-elevated);
 } */
 
-
-.hero__image-glow {
-  position: absolute;
-  inset: -1rem;
-  background: radial-gradient(circle,
-      hsla(145, 45%, 28%, 0.2),
-      hsla(38, 80%, 55%, 0.2));
-  filter: blur(40px);
-  border-radius: 50%;
-  z-index: -1;
-}
 
 .hero__mascot {
   position: relative;
