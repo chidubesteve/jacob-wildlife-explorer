@@ -1,10 +1,6 @@
 // index.js (MODULE FILE)
 
-import {
-  getAnimalData,
-  getFunFactsDataFromAnimal,
-  getKidsTipsData,
-} from "./fetch.js";
+import { getAnimalData, getKidsTipsData } from "./fetch.js";
 
 // CSS variable setup
 const header = document.getElementById("header");
@@ -122,11 +118,13 @@ function createAnimalCard(animal) {
     <article class="animal-card">
 
       ${imageHTML}
-  <div class="animal-card__content"><h3 class="animal-card__name">${animal.name
-    }</h3>
+  <div class="animal-card__content"><h3 class="animal-card__name">${
+    animal.name
+  }</h3>
 <button
-  class="animal-card__favourite ${favourite ? "animal-card__favourite--active" : ""
-    }"
+  class="animal-card__favourite ${
+    favourite ? "animal-card__favourite--active" : ""
+  }"
   data-id="${animal.id}"
   aria-label="${favourite ? "Remove from favourites" : "Add to favourites"}"
        title="${favourite ? "Remove from favourites" : "Add to favourites"}"
@@ -225,8 +223,9 @@ function initFavoritesPage() {
     console.log("Favorite animals:", favoriteAnimals);
 
     if (favoritesCount) {
-      favoritesCount.textContent = `${favoriteAnimals.length} animal${favoriteAnimals.length !== 1 ? "s" : ""
-        } saved`;
+      favoritesCount.textContent = `${favoriteAnimals.length} animal${
+        favoriteAnimals.length !== 1 ? "s" : ""
+      } saved`;
     }
 
     // no need to show clear button if there are no favorites
@@ -265,6 +264,208 @@ function initFavoritesPage() {
       renderFavorites();
     });
   }
+}
+const outlineHeartIcon = `
+<svg width="24px" height="24px" class="support__work__icon" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>
+`;
+
+const filledHeartIcon = `
+<svg width="24px" height="24px" class="support__work__icon" viewBox="0 0 24 24" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>
+`;
+
+/** Initialize the animal detail page */
+function initAnimalDetailPage() {
+  const detailContainer = document.getElementById("animalDetail");
+  const notFoundContainer = document.getElementById("animalNotFound");
+
+  if (!detailContainer) return;
+
+  // Get animal ID from URL query string
+  const urlParams = new URLSearchParams(window.location.search);
+  const animalId = urlParams.get("id");
+
+  if (!animalId) {
+    showNotFound();
+    return;
+  }
+  // Find the animal
+  const animal = animals.find((a) => a.id === animalId);
+
+  if (!animal) {
+    showNotFound();
+    return;
+  }
+
+  // Render animal detail
+  renderAnimalDetail(animal);
+
+  // Update page title and meta
+  document.title = `${animal.name} | Jacob Wildlife Centre`;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    metaDesc.content = `Learn about the ${animal.name} (${animal.scientificName}) at Jacob Wildlife Centre. ${animal.funFact}`;
+  }
+
+  /**
+   * Show not found state
+   */
+  function showNotFound() {
+    detailContainer.style.display = "none";
+    if (notFoundContainer) {
+      notFoundContainer.style.display = "block";
+    }
+  }
+
+  /**
+   * Render animal detail content
+   */
+  function renderAnimalDetail(animal) {
+    const favourite = isFavorite(animal.id);
+
+    detailContainer.innerHTML = `
+      <!-- Image Section -->
+      <div class="animal-detail__image-section">
+        <div class="animal-detail__image">
+    
+            <img src="${animal.img}" alt="${
+      animal.name
+    }" loading="lazy" class="animal-detail__image-img">
+        </div>
+      </div>
+      
+      <!-- Content Section -->
+      <div class="animal-detail__content">
+        <header class="animal-detail__header">
+          <h1 class="animal-detail__name">${animal.name}</h1>
+          <p class="animal-detail__scientific">${animal.scientificName}</p>
+        </header>
+        
+        <span class="animal-detail__zone">          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg> ${animal.location.zone}</span>
+        
+        <p class="animal-detail__description">${animal.description}</p>
+        
+        <!-- Info Cards -->
+        <div class="animal-detail__info-grid">
+          <div class="animal-detail__info-card">
+            <h3 class="animal-detail__info-label"></h3> Habitat</h3>
+            <p class="animal-detail__info-value">${animal.habitat}</p>
+          </div>
+          <div class="animal-detail__info-card">
+            <h3 class="animal-detail__info-label">Diet</h3>
+            <p class="animal-detail__info-value">${animal.diet}</p>
+          </div>
+        </div>
+        
+        <!-- Conservation Status -->
+        <div class="animal-detail__conservation">
+            <h3 class="animal-detail__conservation-label">Conservation Status</h3>
+            <p class="animal-detail__conservation-text">${
+              animal.conservation
+            }</p>
+          </div>
+        </div>
+        
+        <!-- Fun Fact -->
+        <div class="animal-detail__fun-fact">
+          <h3 class="animal-detail__fun-fact-label">Fun Fact</h3>
+          <p class="animal-detail__fun-fact-text">${animal.funFact}</p>
+        </div>
+        
+        <!-- Actions -->
+        <div class="animal-detail__actions">
+     <button 
+  class="btn favourite-btn ${favourite ? "btn--outline-1" : "btn--primary"}"
+  id="favouriteBtnAlt"
+  aria-pressed="${favourite}"
+>
+  <span class="favourite-btn__icon">
+    ${favourite ? filledHeartIcon : outlineHeartIcon}
+  </span>
+  <span class="favourite-btn__text">
+    ${favourite ? "Remove from favourites" : "Add to favourites"}
+  </span>
+</button>
+
+          <a href="map.html" class="btn btn--outline-1">          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="nav__icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg> Find on Map</a>
+        </div>
+      </div>
+    `;
+  }
+
+
+
+function handleDetailFavouriteClick(id, name) {
+  toggleFavorite(id);
+  const favourite = isFavorite(id);
+
+  const btn = document.getElementById("favouriteBtnAlt");
+  if (!btn) return;
+
+  btn.classList.toggle("btn--primary", !favourite);
+  btn.classList.toggle("btn--outline-1", favourite);
+  btn.setAttribute("aria-pressed", favourite);
+
+  btn.querySelector(".favourite-btn__icon").innerHTML = favourite
+    ? filledHeartIcon
+    : outlineHeartIcon;
+
+  btn.querySelector(".favourite-btn__text").textContent = favourite
+    ? "Remove from favourites"
+    : "Add to favourites";
+
+  // 🔔 Notify the rest of the app
+  window.dispatchEvent(new CustomEvent("favoriteUpdated"));
+}
+
+  const favouriteBtnAlt = document.getElementById("favouriteBtnAlt");
+  if (favouriteBtnAlt) {
+    favouriteBtnAlt.addEventListener("click", () => {
+      handleDetailFavouriteClick(animal.id, animal.name);
+    });
+  }
+
 }
 
 /**
@@ -467,8 +668,8 @@ function initMapsPage() {
       locationStatus.innerHTML = `<p><strong>Your Location</strong></p>
         <p>Lat: ${location.lat.toFixed(4)}, Lng: ${location.lng.toFixed(4)} 
         <span class="text-muted">(±${Math.round(
-        location.accuracy
-      )}m)</span></p>`;
+          location.accuracy
+        )}m)</span></p>`;
     }
   }
 
@@ -612,6 +813,9 @@ switch (page) {
     break;
   case "kids":
     initKidsZonePage();
+    break;
+  case "animal":
+    initAnimalDetailPage();
     break;
 }
 

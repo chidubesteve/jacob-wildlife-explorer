@@ -1,0 +1,271 @@
+/* Animal Detail Page Styles */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-muted-foreground);
+  font-weight: 600;
+  margin-block: var(--space-lg);
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+}
+
+/* Animal Detail Layout */
+.animal-detail {
+  display: grid;
+  gap: var(--space-xl);
+
+}
+@media (max-width: 1023px) {
+  .animal-detail{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animal-detail {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* Loading State */
+.animal-detail__loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-3xl);
+}
+
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.95); }
+}
+
+/* Image Section */
+.animal-detail__image-section {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.animal-detail__image {
+  aspect-ratio: 1;
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  width: 100%;
+}
+.animal-detail__image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.animal-detail__placeholder {
+  font-size: 6rem;
+  opacity: 0.3;
+}
+
+.animal-detail__favourite {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 3rem;
+  height: 3rem;
+  background: hsla(45, 30%, 97%, 0.9);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-muted-foreground);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.animal-detail__favourite:hover {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
+.animal-detail__favourite--active {
+  background: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+/* Content Section */
+.animal-detail__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-detail__header {
+  margin-bottom: var(--space-sm);
+}
+
+.animal-detail__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--color-foreground);
+  margin-bottom: var(--space-xs);
+}
+
+.animal-detail__scientific {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--color-muted-foreground);
+  margin: 0;
+}
+
+/* Zone Badge */
+.animal-detail__zone {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: hsla(145, 45%, 28%, 0.1);
+  color: var(--color-primary);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-block: var(--space-md);
+}
+
+/* Description */
+.animal-detail__description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-md);
+}
+
+/* Info Cards Grid */
+.animal-detail__info-grid {
+  display: grid;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .animal-detail__info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.animal-detail__info-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.animal-detail__info-label {
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-xs);
+  font-size: 0.875rem;
+}
+
+.animal-detail__info-value {
+  color: var(--color-muted-foreground);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+/* Conservation Status */
+.animal-detail__conservation {
+  /* display: flex;
+  align-items: flex-start;
+  gap: var(--space-md); */
+  background: hsla(145, 45%, 28%, 0.05);
+  border: 1px solid hsla(145, 45%, 28%, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+
+.animal-detail__conservation-label {
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-xs);
+}
+
+.animal-detail__conservation-text {
+  color: var(--color-muted-foreground);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+/* Fun Fact */
+.animal-detail__fun-fact {
+  background: hsla(38, 80%, 55%, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.animal-detail__fun-fact-label {
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-xs);
+}
+
+.animal-detail__fun-fact-text {
+  color: var(--color-muted-foreground);
+  margin: 0;
+}
+
+/* Actions */
+.animal-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+/* Not Found State */
+.animal-not-found {
+  text-align: center;
+  padding: var(--space-3xl);
+}
+
+.animal-not-found__icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.animal-not-found__title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-sm);
+}
+
+.animal-not-found__text {
+  color: var(--color-muted-foreground);
+  margin-bottom: var(--space-lg);
+}
+
+/* Animation */
+.animal-detail__image-section,
+.animal-detail__content {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.animal-detail__content {
+  animation-delay: 0.1s;
+}
