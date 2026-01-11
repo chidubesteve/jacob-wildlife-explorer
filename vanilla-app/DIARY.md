@@ -546,3 +546,13 @@ Nielsen Norman Group. (2016) *Mobile Navigation Must be Sticky*. Available at: h
 W3C. (2022) *Geolocation API Specification*. Available at: https://www.w3.org/TR/geolocation/ (Accessed: 11 January 2026).
 
 W3C. (2023) *ARIA Authoring Practices Guide*. Available at: https://www.w3.org/WAI/ARIA/apg/ (Accessed: 11 January 2026).
+
+
+![w3c.org link test](image.png). found out that one of links had a typo and this caused a 404 error.
+
+![w3c.org HTML validator](image-1.png) - got a lot of warnings and errors dues the fact of the id used in the SVGs from svgrepo.com `Duplicate ID SVGRepo_bgCarrier`. that is beyond my control. also got warnings that `<g>` and `path` is unrecognized. all these are tags used inside SVGs. maybe the validators doesn't know about them.
+
+tested with lighthouse and page speed insights `https://pagespeed.web.dev/analysis/https-jacob-wildlife-center-vanilla-web-app/35bdhrnmzd?form_factor=mobile`
+![light house analytics and insights-1](image-2.png). achieving a score of 87% performance and 95% accessibility, 96% best practices, 100% SEO. on mobile. and on desktop ![light house insights - desktop](image-3.png), i achieved 99, 95,96 and 100 respectively
+
+[text](<../../../../../../../../Downloads/Lighthouse testing of vanilla app.pdf>)

@@ -39,7 +39,7 @@
             British Wildlife</span>
         </div>
       </a>
-  
+
       <nav class="nav" id="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -48,7 +48,7 @@
           <li class="nav__item"><a href="animals.html" class="nav__link">Animals</a></li>
           <li class="nav__item"><a href="map.html" class="nav__link" aria-current="page">Map</a></li>
           <li class="nav__item">
-            <a href="favorites.html" class="nav__link " >Favorites</a>
+            <a href="favorites.html" class="nav__link ">Favorites</a>
           </li>
           <!-- Install Button (Hidden by default, shown when PWA can be installed) -->
           <li id="installContainer" style="display: none;" class="install-prompt nav__item">
@@ -71,15 +71,15 @@
           </li>
         </ul>
       </nav>
-  
+
     </div>
   </header>
-  
+
   <!-- Mobile Navigation -->
   <nav class="mobile-nav" id="mobileNav">
     <ul>
       <li>
-        <a href="index.html" class="mobile-nav__link" >
+        <a href="index.html" class="mobile-nav__link">
           <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
             class="nav__icon">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -133,7 +133,7 @@
           <span>Map</span>
         </a>
       </li>
-  
+
       <li>
         <a href="favorites.html" class="mobile-nav__link">
           <svg width="20px" height="20px" class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -149,7 +149,7 @@
           <span>Favorites</span>
         </a>
       </li>
-  
+
       <li>
         <a href="kids.html" class="mobile-nav__link">
           <svg fill="none" width="20px" height="20px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +209,7 @@
         </button>
       </div>
       <label for="showAnimalsToggle">
-        <input type="checkbox" id="showAnimalsToggle" name="show animal locations on map" >
+        <input type="checkbox" id="showAnimalsToggle" name="show animal locations on map">
         Show Animal Locations
       </label>
 
@@ -275,11 +275,11 @@
         <span>
 
           <img src="assets/images/logo.png" alt="Jacob Wildlife Centre" class="footer__logo">
-          <h3 class="footer__title">Jacob Wildlife Centre</h3>
-        </span>
-        <p class="footer__text">
-          Rescuing and caring for British wildlife in Liverpool and beyond since 2010.
-        </p>
+          <span class="footer__title">Jacob Wildlife Centre</h3>
+          </span>
+          <p class="footer__text">
+            Rescuing and caring for British wildlife in Liverpool and beyond since 2010.
+          </p>
       </div>
       <div class="footer__links">
         <h4 class="footer__heading">Quick Links</h4>
@@ -298,18 +298,18 @@
     </div>
     <div class="footer__bottom">
       <p>© 2025 Jacob Wildlife Centre. All rights reserved.</p>
-            <div id="networkStatus" class="network-info">
-            </div>
+      <div id="networkStatus" class="network-info">
+      </div>
     </div>
   </footer>
   <script type="module" src="js/index.js"></script>
-    <script src="js/install.js"></script>
-    <script>
-      (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
-        key: "AIzaSyCzuw9CwMwGdr7UMuuO9QtwKnltrDtKCy8",
-        v: "weekly",
-      });
-    </script>
+  <script src="js/install.js"></script>
+  <script>
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+      key: "AIzaSyCzuw9CwMwGdr7UMuuO9QtwKnltrDtKCy8",
+      v: "weekly",
+    });
+  </script>
 </body>
 
 </html>
