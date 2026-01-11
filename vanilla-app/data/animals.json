@@ -4,14 +4,16 @@
     "name": "European Badger",
     "scientificName": "Meles meles",
     "description": "The European badger is a powerfully built black, white, and grey animal with a small head, stocky body, small black eyes, and short tail. They live in family groups (called cete/clan) in a series of underground tunnels called a sett. They help control pest populations.",
-    "img": "assets/badger.webp",
+    "img": "assets/images/european_badger.webp",
+    "imgTablet": "assets/images/european_badger_tablet.webp",
+    "imgMobile": "assets/images/european_badger_mobile.webp",
     "habitat": "Woodlands, hedgerows, and grasslands across the UK",
     "diet": "Omnivore - earthworms, insects, fruits, cereals, and small mammals",
     "funFact": "Badgers are incredibly clean animals and have separate toilet areas away from their setts!",
     "location": {
       "zone": "Badger Setts",
-      "lat": 53.35,
-      "lng": -2.9
+      "lat": 53.395,
+      "lng": -2.905
     },
     "conservation": "Least Concern - Protected under the Protection of Badgers Act 1992",
     "tips": [
@@ -30,11 +32,13 @@
     "diet": "Insectivore - beetles, caterpillars, earthworms, and slugs",
     "conservation": "Vulnerable - UK population has declined by 50% since 2000",
     "funFact": "A hedgehog has around 5,000 to 7,000 spines on its back!",
-    "img": "assets/hedgehog.webp",
+    "img": "assets/images/european_hedgehog.webp",
+    "imgTablet": "assets/images/european_hedgehog_tablet.webp",
+    "imgMobile": "assets/images/european_hedgehog_mobile.webp",
     "location": {
-      "zone": "Squirrel Woods",
-      "lat": 53.36,
-      "lng": -2.88
+      "zone": "Hedgehog Haven",
+      "lat": 53.415,
+      "lng": -2.975
     },
     "tips": [
       "Make a hedgehog highway (small gaps in fences)",
@@ -52,10 +56,12 @@
     "diet": "Carnivore - fish, crustaceans, amphibians, and water birds",
     "conservation": "Near Threatened - Now found in every county in England",
     "funFact": "Otters can close their ears and nostrils when swimming underwater!",
-    "img": "assets/images/otter.webp",
+    "img": "../assets/images/european_otter.webp",
+    "imgTablet": "../assets/images/european_otter_tablet.webp",
+    "imgMobile": "../assets/images/european_otter_mobile.webp",
     "location": {
-      "lat": 53.4044,
-      "lng": -2.9896,
+      "lat": 53.404,
+      "lng": -2.99,
       "zone": "Otter rivers"
     },
     "tips": [
@@ -71,11 +77,12 @@
     "description": "The red fox is the largest of the true foxes and one of the most widely distributed members of the Carnivora, found across the entire Northern Hemisphere. They are highly adaptable and can live in a variety of habitats.",
     "habitat": "Forests, grasslands, mountains, deserts, and urban areas",
     "diet": "Omnivore (opportunistic) - rabbits, rodents, birds, insects, fruits, and vegetables",
-    "img": "assets/images/fox.webp",
+    "img": "assets/images/red-fox.webp",
+    "imgTablet": "assets/images/red-fox_tablet.webp",
+    "imgMobile": "assets/images/red-fox_mobile.webp",
     "location": {
-      
-      "lat": 53.37,
-      "lng": -2.91,
+      "lat": 53.42,
+      "lng": -2.95,
       "zone": "Fox den"
     },
     "funFact": "Foxes have super-hearing, they can hear a watch ticking from 40 yards away!",
@@ -96,12 +103,13 @@
     "diet": "Herbivore - grass, shrubs, and trees",
     "habitat": "Forests, grasslands, and woodlands",
     "source": "https://en.wikipedia.org/wiki/Red_deer",
-    "img": "assets/images/deer.webp",
+    "imgMobile": "assets/images/red-deerred-deer-stag-bellowing-flickr-tony-cox_mobile_1.webp",
+    "imgTablet": "assets/images/red-deerred-deer-stag-bellowing-flickr-tony-cox-tablet.webp",
+    "img": "assets/images/red-deerred-deer-stag-bellowing-flickr-tony-cox.webp",
     "location": {
-
-          "lat": 53.33,
-          "lng": -2.89,
-          "zone": "Deer pasture"
+      "lat": 53.385,
+      "lng": -2.92,
+      "zone": "Deer pasture"
     },
     "tips": [
       "Drive carefully on rural roads at dawn/dusk",
@@ -115,12 +123,13 @@
     "description": "small, agile woodland mammals known for their reddish-brown fur, bushy tail, and distinctive large ear tufts. Not to be confused with: the grey squirrel which is native to the United States.",
     "Diet": "nuts, seeds, tree shoots and other plant matter",
     "Habitat": "coniferous, mixed and broadleaved woodlands",
-    "img": "assets/images/squirrel.webp",
+    "img": "assets/images/Squirrel-red.webp",
+    "imgTablet": "assets/images/Squirrel-red_tablet.webp",
+    "imgMobile": "assets/images/Squirrel-red_mobile.webp",
     "location": {
-
-      "lat": 53.355,
-      "lng": -2.905,
-      "zone":  "Squirrel woods"
+      "lat": 53.41,
+      "lng": -2.965,
+      "zone": "Squirrel woods"
     },
     "funFact": "Red squirrels can jump more than 2m – not bad for an animal with a body length of less than 25cm!",
     "conservation": "Endangered - in England and wales and near threatened in Scotland due to competition and disease from invasive grey squirrels",

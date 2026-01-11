@@ -256,6 +256,181 @@
   font-size: 2.5rem;
 }
 
+/* ================================
+   Kids Install Promotion
+   ================================ */
+
+.kids-install-promo {
+  background: var(--gradient-card);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  margin: var(--space-3xl) 0;
+  box-shadow: var(--shadow-card);
+  animation: fadeInUp 0.6s ease-out both;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kids-install-promo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kids-install-promo__icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-md);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.kids-install-promo__title {
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+
+.kids-install-promo__text {
+  font-size: 1.125rem;
+  color: var(--color-muted-foreground);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.kids-install-promo__button {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border: none;
+  padding: var(--space-md) var(--space-2xl);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  box-shadow: var(--shadow-elevated);
+  transition: all var(--transition-base);
+  margin-bottom: var(--space-md);
+}
+
+.kids-install-promo__button:hover {
+  transform: scale(1.05) translateY(-2px);
+  background: var(--color-primary-light);
+  box-shadow: 0 8px 24px hsla(280, 60%, 60%, 0.3);
+}
+
+.kids-install-promo__button:active {
+  transform: scale(0.98);
+}
+
+.kids-install-promo__button-icon {
+  font-size: 1.5rem;
+  animation: wiggle 1.5s ease infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.kids-install-promo__benefit {
+  font-size: 0.9rem;
+  color: var(--color-muted-foreground);
+  font-weight: 600;
+  margin-top: var(--space-sm);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.kids-install-promo__benefit span {
+  display: inline-block;
+}
+
+/* Success State */
+.kids-install-promo--success .kids-install-promo__icon {
+  animation: celebrate 0.6s ease-out;
+}
+
+@keyframes celebrate {
+  0% {
+    transform: scale(0.5) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 640px) {
+  .kids-install-promo {
+    padding: var(--space-lg);
+    margin: var(--space-xl) 0;
+  }
+  
+  .kids-install-promo__icon {
+    font-size: 3rem;
+  }
+  
+  .kids-install-promo__title {
+    font-size: 1.5rem;
+  }
+  
+  .kids-install-promo__text {
+    font-size: 1rem;
+  }
+  
+  .kids-install-promo__button {
+    font-size: 1.1rem;
+    padding: var(--space-sm) var(--space-lg);
+  }
+  
+  .kids-install-promo__benefit {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+}
+
+/* Dark Mode Enhancement */
+@media (prefers-color-scheme: dark) {
+  .kids-install-promo__button:hover {
+    box-shadow: 0 8px 24px hsla(280, 60%, 50%, 0.4);
+  }
+}
+
 /* Kids Footer */
 .kids-footer {
   border-top: 1px solid var(--color-border);

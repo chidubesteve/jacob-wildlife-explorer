@@ -73,6 +73,7 @@
 /* Info Banner */
 .info-banner {
   display: flex;
+  background: red;
   align-items: flex-start;
   gap: var(--space-sm);
   background: hsla(145, 45%, 28%, 0.05);
@@ -117,3 +118,23 @@
   margin-bottom: var(--space-lg);
 }
 
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: var(--space-3xl);
+  grid-column: 1 / -1;
+}
+
+
+.empty-state__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-foreground);
+  margin-bottom: var(--space-sm);
+}
+
+.empty-state__text {
+  color: var(--color-muted-foreground);
+  margin-bottom: var(--space-lg);
+}

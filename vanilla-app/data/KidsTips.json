@@ -1,0 +1,26 @@
+[
+    {
+      "id": "LogPile",
+      "icon": "🪵",
+      "title": "Create a Log Pile Habitat",
+      "description": "Ask a grown-up to help you stack some old logs in a quiet corner of your garden. Log piles provide shelter and breeding grounds for various insects, amphibians, and small mammals. They also help improve soil health as they decompose."
+    },
+    {
+        "id": "BirdFeeder",
+        "icon": "🐦",
+        "title": "Build a Bird Feeder",
+        "description": "Using a pine cone, peanut butter, and birdseed, you can create a simple bird feeder. Spread peanut butter over the pine cone and roll it in birdseed. Hang it from a tree branch using a piece of string. Watch as different bird species visit your feeder!"
+    },
+    {
+        "id": "BugHotel",
+        "icon": "🐞",
+        "title": "Make a Bug Hotel",
+        "description": "Make a bug hotel out of a box of bugs, cardboard, and string. Hang it from a tree branch using a piece of string. Watch as different insect species visit your bug hotel!"
+    },
+    {
+        "id": "waterDish",
+        "icon": "💧",
+        "title": "Set Up a Water Dish",
+        "description": "Put out a shallow dish of fresh water for birds and hedgehogs to drink. Remember to change the water every day so it stays clean!"
+    }
+]

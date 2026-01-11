@@ -339,11 +339,19 @@ button {
 }
 
 .nav__kids-zone {
-  display: block;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .nav__item {
+    display: block;
+  }
+  .nav__kids-zone {
+    display: block;
+  }
+
+    /* Show Install Button when available */
+  .install-prompt {
     display: block;
   }
 }
@@ -411,6 +419,9 @@ button {
   fill: #DF9920;
   text-align: center;
 }
+.kids__zone-icon-mobile {
+  fill: currentColor;
+}
 
 
 /* menu btn */
@@ -471,7 +482,6 @@ button {
 
 .mobile-nav__link {
   flex: 1;
-  /* what is flex 1 doing here? */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -747,6 +757,7 @@ button {
 .animals-grid {
   display: grid;
   gap: var(--space-lg);
+  margin-block: var(--space-xl);
 }
 
 @media (min-width: 640px) {
@@ -780,21 +791,20 @@ button {
 }
 
 .animal-card__favourite {
-  position: absolute;
-  top: var(--space-md);
-  right: var(--space-md);
-  width: 2.5rem;
-  height: 2.5rem;
   display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
   align-items: center;
   justify-content: center;
-  background: hsla(45, 30%, 97%, 0.9);
+  background: hsla(140, 15%, 90%, 0.9);
+  font-size: 1.5rem;
   border-radius: var(--radius-full);
-  font-size: 1.25rem;
-  transition: all var(--transition-fast);
+ color: var(--color-muted-foreground);
+  transition: transform 150ms ease, color 150ms ease;
   cursor: pointer;
   border: none;
 }
+
 
 @media (prefers-color-scheme: dark) {
   .animal-card__favourite {
@@ -807,7 +817,8 @@ button {
 }
 
 .animal-card__favourite--active {
-  background: var(--color-accent);
+  color: var(--color-accent);
+  stroke: var(--color-accent);
 }
 
 .animal-card__image {
@@ -819,17 +830,19 @@ button {
   justify-content: center;
   margin-bottom: var(--space-md);
   overflow: hidden;
+  width: 100%;
 }
 
 .animal-card__image img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
-
-.animal-card__placeholder {
-  font-size: 3rem;
-  opacity: 0.3;
+.animal-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .animal-card__name {
@@ -837,6 +850,20 @@ button {
   font-size: 1.25rem;
   color: var(--color-foreground);
   margin-bottom: var(--space-xs);
+}
+.favorite_animal__icon {
+  stroke: currentColor;
+  fill: none;
+}
+@media (prefers-color-scheme: dark) {
+  .animal-card__favourite:not(.animal-card__favourite--active)
+  .favorite_animal__icon {
+    stroke: whitesmoke;
+  }
+}
+.animal-card__favourite--active .favorite_animal__icon {
+  fill: currentColor;
+  stroke: currentColor
 }
 
 .animal-card__scientific {
@@ -858,7 +885,7 @@ button {
 }
 
 .animal-card__zone {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: var(--space-xs);
   padding: var(--space-xs) var(--space-sm);
@@ -867,8 +894,14 @@ button {
   font-size: 0.75rem;
   font-weight: 600;
   border-radius: var(--radius-full);
-  margin-bottom: var(--space-md);
 }
+
+.animal-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .animal-card__link {
   display: inline-flex;
@@ -1075,6 +1108,11 @@ button {
   padding: var(--space-md) 0;
 }
 
+.network-info {
+  display: inline-flex;
+  gap: var(--space-md);
+}
+
 @media screen and (max-width: 767px) {
   .footer__bottom {
     margin-bottom: var(--mobile-nav-height);
@@ -1086,6 +1124,8 @@ button {
   color: var(--color-muted-foreground);
   font-size: 0.75rem;
 }
+
+
 
 
 /* Animations */
