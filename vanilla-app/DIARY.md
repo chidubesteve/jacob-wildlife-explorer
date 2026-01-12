@@ -556,3 +556,5 @@ tested with lighthouse and page speed insights `https://pagespeed.web.dev/analys
 ![light house analytics and insights-1](image-2.png). achieving a score of 87% performance and 95% accessibility, 96% best practices, 100% SEO. on mobile. and on desktop ![light house insights - desktop](image-3.png), i achieved 99, 95,96 and 100 respectively
 
 [text](<../../../../../../../../Downloads/Lighthouse testing of vanilla app.pdf>)
+
+The PWA install prompt appeared unreliable because beforeinstallprompt is browser-controlled and fires only once under strict conditions. Additionally, some UI logic was executing unconditionally on page load, hiding the install button prematurely. Refactoring the logic to show install UI only when the event fires, and hiding it only after appinstalled, resolved the issue and aligned behaviour with the PWA specification.
