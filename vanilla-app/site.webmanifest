@@ -1,13 +1,14 @@
 {
   "name": "Jacob Wildlife Explorer",
   "short_name": "JWL Explorer",
-  "description": "Jacob Wildlife Centre rescues, rehabilitates, and rehomes British wildlife near Liverpool",
+  "description": "Jacob Wildlife Centre rescues, rehabilitates, and rehomes British wildlife near Liverpool. Explore native species, save favourites, and learn about conservation.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#4cb13d",
   "background_color": "#ffffff",
+
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -34,7 +35,41 @@
       "purpose": "maskable"
     }
   ],
-  "categories": ["adventure", "lifestyle", "education", "nature"],
+
+  "screenshots": [
+    {
+      "src": "assets/images/127.0.0.1_5500_animals.html_390.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "assets/images/127.0.0.1_5500_favorites.html_390.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/127.0.0.1_5500_kids.html_390.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/127.0.0.1_5500_map.html_1440.jpg",
+      "sizes": "1440x936",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/images/127.0.0.1_5500_index.html_1440.jpg",
+      "sizes": "1440x936",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+
+  "categories": ["education", "nature", "lifestyle"],
   "lang": "en-GB",
   "dir": "ltr"
 }
